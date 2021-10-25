@@ -1,0 +1,30 @@
+print("=================================================")
+print(".............. DATA MAHASISWA UNMUL .............")
+print("=================================================")
+Nama = str(input("Masukkan Nama Anda :"))
+NIM = int(input("Masukkan NIM Anda :"))
+Jenis_Kelamin = str(input("Masukkan Gender anda (L/P):"))
+Program_Studi = str(input("Program Studi :"))
+IPK = float(input("Berapa IPK Rata-Rata anda? "))
+
+#List Data
+print("Lihat data ke- :\nA.Nama\nB.NIM\C.Umur\nD.Prodi\nE.IPK\nF.Keseluruhan")
+
+List_Data = [Nama, NIM, Jenis_Kelamin, Program_Studi, IPK]
+
+x = input("A,B,C,D,E,dan F : ")
+
+if x == 'A' :
+    print ("Nama:", Nama)
+elif x == 'B' :
+    print ("NIM :", NIM)
+elif x == 'C' :
+    print ("Gender :", Jenis_Kelamin)
+elif x == "D" :
+    print ('Prodi:', Program_Studi)
+elif x == "E" :
+    print ('IPK:', IPK)
+elif x == "F" :
+    print ("DATA MAHASISWA :", (List_Data[0:5]))
+else :
+    print ('Masukkan variable dengan benar')
