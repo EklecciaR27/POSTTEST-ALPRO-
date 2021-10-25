@@ -1,0 +1,47 @@
+print('Konversi SUHU')
+print("==================")
+
+print("A.Farenheit -> Celcius\nB.Kelvin -> Celcius\nC.Reamur-> Celcius")
+
+pilih = input("Pilih A,B,C :")
+
+#F to C
+if pilih == "A" :
+    F=float(input("Suhu Farenheit :"))
+    C1 =((F - 32) * 5/9)
+    print("Suhu Celcius :", C1 ,)
+#K to C
+elif pilih == "B" :
+    K=float(input("Suhu Kelvin:"))
+    C2= (K - 273.15)
+    print("Suhu Celcius", C2)
+#R to C
+else :
+    R=float(input("Suhu Reamur:"))
+    C3= ((5/4) * R)
+    print("Suhu Celcius", C3)
+
+x = input("ingin mengerjakan ulang?\nYa/Tidak:")
+
+while x == "Ya" :
+    pilih = input("Pilih A,B,C :")
+    #F to C
+    if pilih == "A" :
+        F=float(input("Suhu Farenheit :"))
+        C1 =((F - 32) * 5/9)
+        print("Suhu Celcius :", C1 ,)
+    #K to C
+    elif pilih == "B" :
+        K=float(input("Suhu Kelvin:"))
+        C2= (K - 273.15)
+        print("Suhu Celcius", C2)
+    #R to C
+    else :
+        R=float(input("Suhu Reamur:"))
+        C3= ((5/4) * R)
+        print("Suhu Celcius", C3)
+else : 
+    print('Terima Kasih telah menggunakan aplikasi kami :')
+
+
+
